@@ -1,73 +1,143 @@
-# Welcome to your Lovable project
+# 🌐 Cross-Chain Loan Agent
 
-## Project info
+**Discover the best DeFi loan options across blockchains using AI-powered autonomous agents.**  
+Built with Fetch.ai’s Agentverse and powered by the ASI1-mini LLM.
 
-**URL**: https://lovable.dev/projects/71ff146d-62de-485b-903c-37e110c25a0e
+## 📌 Overview
 
-## How can I edit this code?
+DeFi lending is highly fragmented, making it difficult to identify optimal loan terms across multiple blockchain networks. The **Cross-Chain Loan Agent** is a Web3-native solution that simplifies this process by:
 
-There are several ways of editing your application.
+- Fetching and comparing loan offers across multiple chains (Ethereum, Polygon, BNB Chain, etc.)
+- Ranking options based on user preferences like low collateral or best interest rates
+- Providing easy-to-understand explanations powered by the ASI1-mini LLM
+- Enabling a seamless conversational experience through the ASI:One Web App
 
-**Use Lovable**
+## 🔍 Use Case
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/71ff146d-62de-485b-903c-37e110c25a0e) and start prompting.
+> **User query:** “What’s the best ETH loan with low collateral?”  
+> **Agent response:** A ranked list of loan options from multiple chains, with detailed reasoning behind each recommendation.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 💡 Features
 
-**Use your preferred IDE**
+- 🤖 **Conversational UI** – Ask natural language questions and receive AI-generated responses.
+- 📊 **Loan Comparison Dashboard** – Visual display of interest rates, collateral ratios, lock-in periods, and platforms.
+- 🔗 **Cross-Chain Intelligence** – Aggregates and evaluates loans from leading DeFi platforms across chains.
+- ⚙️ **Agent-Based Architecture** – Powered by uAgents that collaborate using the Fetch.ai chat protocol.
+- 🧠 **LLM-Powered Decision Making** – Uses ASI1-mini to provide intelligent responses and explanations.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ⚙️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Fetch.ai Agentverse** – For deploying intelligent uAgents
+- **ASI1-mini LLM** – To process natural language queries and generate insights
+- **ASI:One Web App** – For interactive user experience and agent discovery
+- **React + Tailwind CSS** – Frontend design
+- **Web3.js / Ethers.js** – Interacting with DeFi protocols
+- **Node.js / Express** – Backend services (if needed)
 
-Follow these steps:
+## 🖼️ UI Snapshot (Concept)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Modern dashboard inspired by fintech apps like Block.fi and Aave
+- Clean, professional design with dark/light mode toggle
+- Tabular and card-based views of loan options
+- Chatbox-style interface for querying the agent
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🧠 Architecture
 
-# Step 3: Install the necessary dependencies.
-npm i
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+User
+│
+▼
+ASI\:One Web App — Conversational UI
+│
+▼
+ASI1-mini LLM ↔ Cross-Chain Loan Agent (uAgent)
+│
+▼
+Blockchain APIs (Aave, Compound, Venus, etc.)
+│
+▼
+Ranked Loan Options (with explanations)
+
+````
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- Access to [ASI:One Web App](https://asi.one)
+- Fetch.ai Agentverse account
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/cross-chain-loan-agent.git
+cd cross-chain-loan-agent
+npm install
+````
+
+### Development
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+> 🧠 Agent setup and registration is done via [Agentverse](https://agentverse.ai)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📚 How to Use
 
-**Use GitHub Codespaces**
+1. Open the ASI\:One web app.
+2. Search for the **Cross-Chain Loan Agent**.
+3. Ask questions like:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+   * “What’s the best loan for 2 ETH on Polygon?”
+   * “Compare loans for DAI with lowest interest.”
+4. View a ranked list of results with analysis.
 
-## What technologies are used for this project?
+## 📦 Project Structure
 
-This project is built with:
+```
+/src
+  /components
+  /agents
+  /utils
+  App.js
+  index.js
+/agentverse
+  config.yaml
+README.md
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🛡️ Security & Privacy
 
-## How can I deploy this project?
+* All transactions and queries are handled via decentralized Fetch.ai protocols.
+* No personal information is stored.
+* Smart contract interaction is transparent and verifiable.
 
-Simply open [Lovable](https://lovable.dev/projects/71ff146d-62de-485b-903c-37e110c25a0e) and click on Share -> Publish.
+## 🧩 Future Enhancements
 
-## Can I connect a custom domain to my Lovable project?
+* Wallet integration for personalized results
+* Real-time DeFi updates and notifications
+* Support for NFT-backed loans and RWAs
+* Risk score assessment powered by analytics agents
 
-Yes, you can!
+## 🤝 Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+We welcome contributions! Please open an issue or submit a pull request.
+Check out the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🔗 Links
+
+* 🌐 [Agentverse](https://agentverse.ai)
+* 🚀 [ASI\:One Web App](https://asi.one)
+* 🧠 [Learn about ASI1-mini](https://fetch.ai/docs/asi1)
+* 📖 [Fetch.ai Documentation](https://docs.fetch.ai/)
+
+---
+
+> *“The future of AI isn’t centralized—it’s agentic, decentralized, and Web3-native.”*
