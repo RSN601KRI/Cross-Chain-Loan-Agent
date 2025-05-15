@@ -117,10 +117,12 @@ README.md
 
 ## 🧩 Future Enhancements
 
-* Wallet integration for personalized results
+* Wallet integration for personalised results
 * Real-time DeFi updates and notifications
-* Support for NFT-backed loans and RWAs
+* Support for NFT-backed loans and RWAS
 * Risk score assessment powered by analytics agents
+
+## Demo Here: https://vimeo.com/1084596950?share=copy
 
 ## 🤝 Contributing
 
